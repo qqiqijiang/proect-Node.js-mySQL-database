@@ -1,0 +1,48 @@
+body{
+    background-image:url("back.jpg");
+    background-size: cover;
+}
+.whole{
+    background-color:#000000;
+    background-color:rgba(0,0,0,0.4);
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.whole p {
+    color: #FFFFFF;
+}
+.btn-toolbar{
+    float: right;
+    margin-right:50px;
+    margin-top: 3%;
+}
+h5{
+    text-align: center;
+    color: lightgoldenrodyellow;
+    /*margin-top: 15%;*/
+}
+h4{
+    text-align: center;
+    margin-left: 300px;
+    margin-top: 50px;
+    font-size: 50px;
+    color: lightgoldenrodyellow;
+}
+.card{
+    width: 300px;
+    height: 250px;
+    float: left;
+    margin-left: 8%;
+    margin-top: 30px;
+}
+.card-img-top{
+    width: 286px;
+    height: 200px;
+}
+.card-body{
+    margin-top: -30px;
+}
+img:hover {
+    transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}

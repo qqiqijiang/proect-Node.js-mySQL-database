@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="../mystyle2.css">
+</head>
+<body>
+
+<div class="whole">
+
+    <%if(username){%>
+
+    <div class="btn-toolbar" role="toolbar">
+        <a href="/"><button type="button" class="btn btn-warning">Home</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/upload"><button type="button" class="btn btn-info">Upload</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/logout"><button type="button" class="btn btn-danger">Log Out</button></a>
+
+    </div>
+
+    <h4> Welcome,  <%= username %> </h4>
+    <h5>Feel free to download and upload images here.</h5>
+
+
+    <%}else{%>
+    <div class="btn-toolbar" role="toolbar">
+        <a href="/"><button type="button" class="btn btn-warning">Home</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/login.html"><button type="button" class="btn btn-info">Log in</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="join.html"><button type="button" class="btn btn-danger">Sign Up</button></a>
+    </div>
+
+    <h4> Hello, Dear Visitor!</h4>
+
+    <%}%>
+
+        <%for(var i=0;i<gallery.length;i++){%>
+
+            <a href="<%=gallery[i].Source%>" >
+                <div class="card" style="width: 18rem;">
+                <img src="uploads/<%=gallery[i].Source %>" class="card-img-top" alt="upload by <%=gallery[i].Username%> on <%= gallery[i].Date %>">>
+                <div class="card-body">
+                <h6 class="card-text">By <%=gallery[i].Username%> on <%= gallery[i].Date %></h6>
+                </div>
+                </div>
+            </a>
+
+        <%}%>
+
+
+</div>
+</body>
+</html>

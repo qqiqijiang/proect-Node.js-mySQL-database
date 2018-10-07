@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="../mystyle.css">
+</head>
+<body>
+<div id="head">
+
+    <h1> Welcome to Tasty World! </h1>
+
+</div>
+
+<div>
+    <%if(username){%>
+    <div class="btn-toolbar" role="toolbar">
+        <a href="/profile"><%username%></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="profile"><button type="button" class="btn btn-warning">Gallery</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/logout"><button type="button" class="btn btn-danger">Log Out</button></a>
+    </div>
+    <%}else{%>
+        <div class="btn-toolbar" role="toolbar">
+            <a href="login.html"><button type="button" class="btn btn-warning">Login</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="join.html"><button type="button" class="btn btn-danger">Sign Up</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="profile"><button type="button" class="btn btn-info">Visitor</button></a>
+        </div>
+        <%}%>
+</div>
+</body>
+</html>

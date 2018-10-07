@@ -1,0 +1,50 @@
+body{
+    background-image:url("back.jpg");
+    background-size: cover;
+}
+.btn-toolbar{
+    float: right;
+    margin-right: 50px;
+    margin-top: -100px;
+    width: 200px;
+    height: 100px;
+}
+.form{
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 35%;
+    width: 400px;
+    height: 500px;
+}
+h1,h2{
+    text-align: center;
+    color: lightgoldenrodyellow;
+    /*margin-top: 15%;*/
+}
+h3{
+    text-align: center;
+    color: lightgoldenrodyellow;
+}
+h4{
+    text-align: center;
+    color: lightgoldenrodyellow;
+}
+p{
+    text-align: center;
+    font-size: larger;
+    color: lightgoldenrodyellow;
+}
+.enter{
+    margin-top: 50px;
+    text-align: center;
+}
+a{
+    color: lightgoldenrodyellow;
+}
+img:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+/*button{*/
+/*text-align: center;*/
+/*size: 100px;*/
+/*}*/
